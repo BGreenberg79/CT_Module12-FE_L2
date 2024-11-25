@@ -20,7 +20,7 @@ const Exercise = () => {
         <ListGroup>
                     {(Object.entries(workouts).map((workout, index)=>(
                         <ListGroup.Item variant='warning' key={index}>
-                        Customer ID: {workout.id}, Exercise Name: {workout.name}, Duration: {workout.duration}, Calories: {workout.calories}
+                        Workout ID: {workout.id}, Exercise Name: {workout.name}, Duration: {workout.duration}, Calories: {workout.calories}
 
                         <Button variant='danger' className='shadow-sm m-1 p-1' onClick={() => handleDeleteWorkout(workout.id)}>
                             Delete
